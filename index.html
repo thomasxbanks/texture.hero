@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texture Hero</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="texture" data-background="plus" data-foreground="hexagons">
+      <h1 class="ft-fc-accent ft-sz-canon ft-wt-stone">
+        Lorem ipsum dolor sit amet: Sit cupiditate beatae ipsum consectetur adipisicing elit.
+      </h1>
+  </header>
+
+  <div class="wrapper gutters spacing stack">
+    <h2 class="ft-fc-accent ft-sz-doublepica">Background</h2>
+    <div class="flex centered-hz centered-vt layout-even">
+      <button class="button default primary" data-action="background" data-texture="banknote">Banknote</button>
+      <button class="button default primary" data-action="background" data-texture="plus">Plus</button>
+      <button class="button default primary" data-action="background" data-texture="hexagons">Hexagons</button>
+      <button class="button default primary" data-action="background" data-texture="cage">Cage</button>
+      <label for="color-background"><strong>Background Color:</strong>
+        <input data-action="background" type="color" list="presets" value="#ffff00">
+        <datalist id="presets">
+          <option value="#ff0000">Red</option>
+          <option value="#ffff00">Yellow</option>
+          <option value="#0000ff">Blue</option>
+          <option value="#00cc00">Green</option>
+          <option value="#cc00cc">Purple</option>
+        </datalist>
+      </label>
+    </div>
+    <h2 class="ft-fc-accent ft-sz-doublepica">Foreground</h2>
+    <div class="flex centered-hz centered-vt layout-even">
+      <button class="button default primary" data-action="foreground" data-texture="banknote">Banknote</button>
+      <button class="button default primary" data-action="foreground" data-texture="plus">Plus</button>
+      <button class="button default primary" data-action="foreground" data-texture="hexagons">Hexagons</button>
+      <button class="button default primary" data-action="foreground" data-texture="cage">Cage</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
